@@ -1,0 +1,255 @@
+Recap
+
+A class is a blueprint or a template for creating objects.
+It defines the properties and behaviors that an object of 
+that class should have.
+
+A class consists of variables, methods.
+
+An object is an instance of a class
+
+An object is created using the "new" keyword
+
+When a new instance of a class is created using the new keyword,
+memory is allocated for that object.
+
+The class's constructor is called to initialize the object.
+
+Once an object is created, you can access its properties 
+and methods using dot notation.
+
+ClassName obj =new Classname();
+
+The variables in a class ->data of an object. 
+
+Methods define the behavior of the object.
+
+
+Data types: are used to specify the type of data that can be stored in a variable,
+as well as the operations that can be performed on that data.
+
+Variable--->place holder a=5;
+                          b=10;
+						  c=a+b;
+
+
+
+Car:
+wheels,register number,window,Gear or Non Gear Car,
+doors,shape n size,manual  or automatic,petrol or diseal
+brand, Sedon , hatchback, SUV,number of seats
+
+Variable--->Data/information reg class
+
+
+Java has two categories of data types: 
+
+primitive data types and Non-primitive data types.
+
+whole number
+ byte
+  small digit 8 bit
+ short
+ 16bit below 5 
+ int
+ 32 bit below 9  
+ long
+64 bite above 9 
+
+
+
+
+
+
+Primitive data types 
+
+boolean: represents true/false values
+byte: represents a small integer value 8
+short: represents a short integer value 16
+int: represents an integer value 32
+long: represents a long integer value 64l
+float: represents a  floating-point value 32 f
+double: represents a  floating-point value 64 d
+char: represents a single character value'T'
+
+
+    int age=30;
+	char name='p';
+	String name="testleaf";
+	boolean writing=true/false;
+	float=10.3f;
+	
+
+
+
+
+
+
+Non-primitive 
+
+String: represents a sequence of characters "Testleaf123"
+
+String---class
+ String name="Testleaf"; 
+
+Arrays: represents a collection of elements of the same type
+
+Classes: represents objects with properties and behaviors
+
+The variables in a class ->data of an object. 
+
+Variables are name given to store value in the memory
+
+Declaration of Variables 
+
+Syntax : datatype VarName= value;
+
+datatype –shows type of variable ( integer, float, string)
+
+varName- name given to the  variable.
+-caseSensitive
+-first letter to be small letter.
+-recommended to use camelCase
+
+
+value
+
+int value=5;
+String name=“Sanjay”;
+
+ ===>On the basis of this we have three types of variables
+         * Local Variables---Variables which are declared Inside methods
+                             Variables declared Inside method are limited for that method.
+
+         *Instance Variables----Instance variables are declared on class level or constructors (outside the method).
+
+         *Static Variables------variables are declared using static keyword.
+
+
+
+
+
+
+
+Operators:
+operators are special symbols that perform specific operations
+ 
+1.Arithmetic operators:
+These operators are used to perform mathematical operations
+such as addition, subtraction, multiplication,and division.
++ (addition)
+- (subtraction)
+* (multiplication)
+/ (division)-Que
+% (modulus or remainder)
+
+2.Assignment operators:
+These operators are used to assign values to variables. 
+= (assignment)
++= (add and assign)   a=5   a=a+5;  a+=5;
+-= (subtract and assign)
+*= (multiply and assign)
+/= (divide and assign)
+%= (modulus and assign)
+
+3.Comparison operators:
+These operators are used to compare two value
+and return a boolean value (true or false). 
+== (equal to)
+!= (not equal to)
+> (greater than)
+< (less than)
+>= (greater than or equal to)
+<= (less than or equal to)
+
+4.Logical operators: And(mul) Or(add) Not(complement)
+These operators are used to combine two or more boolean expressions
+and return a boolean value.
+&& (logical and) 
+AND----->&&--->
+1*0=0     T F F
+0*1=0     F T F
+0*0=0     F F F
+1*1=1     T T T
+
+(5==5)&&(5<5)---false
+
+|| (logical or)
+addition
+OR------>||
+1+0=1    T F T
+0+1=1    F T T
+1+1=1    T T T
+0+0=0    F F F
+(5==5)||(5<5)---True
+
+
+! (logical not or negation)
+1---0   T F
+
+0---1   F  T
+boolean flag =false;
+(!flag)
+
+5. unary operator
+Increment operator (++) +1 
+Decrement operator (--)
+
+
+Conditional Statements:(Selection)
+------------------------
+if statement: It executes a block of code if a specified condition is true.
+
+if-else statement: It executes one block of code if a specified condition
+is true and another block if it is false.
+
+nested if-else statement: It allows you to have an if-else statement
+inside another if-else statement.
+
+Looping Statements:(Iteration)
+-------------------
+for loop: It repeats a block of code a specified number of times.
+
+syntax:
+--------
+for(initialization;condition;incre/decre){
+//body of the statement
+}
+
+Example:
+
+for(int i=0;i<=5;i++ ){
+
+}
+
+
+Jump Statements:
+
+break statement: It terminates the current loop or switch statement
+and transfers control to the statement immediately following it.
+
+continue statement: It skips the rest of the current iteration 
+of a loop and proceeds to the next iteration.
+
+break; stop the entire execution
+continue;skip the particular value
+
+
+for(int i=0; i<=5;i++ ){
+if(i==3){
+syso(i)
+break;
+}
+0
+1
+2
+for(int i=0; i<=5;i++ ){
+if(i==3){
+syso(i)
+continue;
+}
+0
+1
+2
+4
+5
