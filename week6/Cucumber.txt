@@ -1,0 +1,55 @@
+1.Move the dataprovider to the ProjectSpecificMethod
+2.Remove the hotcode values in ReadExcel class and passing aruguments
+3.Add @BeforeTest annotations and set specific details in every testcase( ExcelFile name)
+4.Declare global variable as excelFileName and pass the variable name in @Dataprovider excelData() method
+
+1,CreateLead
+2,editLead
+3.DeleteLead
+4.DuplicateLead
+5.MergeLead
+
+
+@BeforeSuite -report start
+    @BeforeTest -->set details
+           @BeforeClass
+                     @DataProvider
+                   @BeforeMethod
+                              @Test
+                   @AfterMethod
+            @AfterClass
+     @AfterTest
+@BeforeSuite
+
+
+
+
+
+
+
+
+tetcase id
+testcase description
+testdata
+precondition
+teststeps
+Expected result
+actual result
+status
+
+Three Layers of cucumber
+1.Feature
+2.stepDefnition
+3.Runner
+
+Feature: Leaftaps application Login functionality
+Scenario: Leaftaps application with valid credentials
+Given Open the chrome browser
+And Load the application url
+And Enter the username as Demosalesmanager
+And Enter the password as crmsfa
+When Click on Login button
+Then Homepage should be displayed
+
+
+
