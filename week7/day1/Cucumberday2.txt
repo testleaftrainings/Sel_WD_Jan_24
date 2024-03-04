@@ -1,0 +1,118 @@
+Hooks Implementation:/ cucumber annotations
+Initial cucumber was developed rupy language
+
+@Before  --Precondition   -Used to excute before each scenario
+@After   --Postcondition  -Used to execute after scenario
+
+Steps to Implement hooks Implementation:
+1.create baseclass  to have common variables and methods
+2.move the chromedriver declaration to the base class
+3.To extends base class to all step defnition classes
+4.Create a new class as Hooks Implementation and extends base class
+5.Create 2 methods  preCondition() and postCondition() with @Before and @After annotations
+6.Add necessary code move to @Before and @After annotation
+
+
+
+
+
+
+
+Cucumber tags:
+Smoke 
+sanity
+regression
+functional
+
+
+
+
+
+
+
+
+
+
+Exception Handling:
+Exceptions is an abnormal condition which will interupt the 
+normal  flow of excution ..
+
+Why we handling Exception:
+To enable the normal flow of execution
+
+types:
+CheckedException -CompileTimeException
+UncheckedException - RuntimeException
+
+RuntimeException:
+
+InvalidSelectorException
+NoSuchElementException
+StaleElementReferenceException
+NoSuchWindowException
+NoSuchFrameExcveption
+NoSuchElementException
+NoAlertPresentException
+UnHandledAlertException
+ElementClickInterceptedException
+ElementInteractableException
+JavaScriptException
+
+
+try {
+		System.out.println(a/0);
+		try {
+			System.out.println(num[7]);
+		} 
+	      catch (ArithmeticException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	        }
+	     
+	     catch (ArrayIndexOutOfBoundsException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
