@@ -1,0 +1,49 @@
+Parallel Execution
+Excel Integration
+ThreadLocal Implementation & Parallel Execution Cucumber
+
+
+Parallel Execution POM:
+1.Remove the static keyword form BaseClass
+e.g
+  public  ChromeDriver driver;
+2.Create a constructor call in all class in pages package
+  e.g
+   public LoginPage() {
+		
+	}
+3.Assign the chrome driver in constructor aruguments 
+e.g
+   public LoginPage(ChromeDriver driver) {
+		this.driver=driver;
+	}
+
+
+ThreadLocal implementation:
+1. We have to create a new project
+2.Add necessary dependencies in pom.xml file
+
+
+Learn Final Keyword:
+Final is a java keyword ans also non-access modifiers 
+we can able to use 
+     class  --We can not inherit from other class
+     methods -- we can able do overload but we can not overidde final method
+     variable -- should be constant
+
+
+1.AbstractTestNGCucumberTests
+2.BaseClass
+3.Runner
+
+
+
+
+
+
+
+
+
+
+
+
