@@ -1,0 +1,85 @@
+
+Selenium-Java
+testng
+apachepoi, ooxml
+
+create a new project named as PageObjectModelProject
+Add necessary dependencies in pom.xml file
+
+
+Steps to Implement Page object model:
+1.Create necessary packages 
+   *base -- to have BaseClass  with common properties
+   *pages --
+   *packages
+   *Utills
+
+2.Create BaseClass under base package
+  *Create preCondition() and postCondition() methods with necessary code
+  *Declare the ChromeDriver as global variable with public access modifiers
+   i.e
+   public ChromeDriver driver;
+   *Apply @BeforeMethod for preColndition() and @AfterMethod for postCondition()
+
+3.Create java classes for all pages that we navigate in the application
+   * 6 java classes created under pages package
+4.All the pages are should extend with BaseClass
+5.Create methods for each actions/ verification in the respective pages java class 
+with appropriate code for each actions and verifications
+
+6.Apply return statement for all the methods in the pages
+   return this --> same pages
+   new PageClass()--> for another page
+
+7.Create a java classes for each testcase under testcases package
+8. All the testcase java classes should ectend with BaseClass
+
+
+
+
+Common Dataprovider:
+1.Just copy the data provider code and paste in POM BaseClass
+2.Copy Read Excel class and paste in POM under utills package
+3.now am getting error in ReadExcel class you should check import Statement
+4.We declare excelFileName as Global variable in BaseClass
+    i.e
+       public String excelFileName;
+5.Copy Excel Folder from Existing project and paste in POM project
+6.Copy @BeforeTest annotations from Existing TestNg 
+7.Make sure you pass the dataprovider name in @Test annataions
+
+
+parallel Execution:
+1.Remove static keyword in Chrome declaration in BaseClass
+   i.e 
+     public static ChromeDriver driver;
+  remove static:
+public ChromeDriver driver;
+
+2.Create a constructor call in each pages 
+    i.e
+  public LoginPage(){
+		
+	}
+
+3.pass the aruguments in constructor call
+i.e  
+public LoginPage(ChromeDriver driver){
+		
+	}
+ 
+4.Assign the driver to the global driver inside the constructor
+
+ i.e
+     public LoginPage(ChromeDriver driver){
+		this.driver=driver;
+	}
+
+
+
+
+
+
+
+
+
